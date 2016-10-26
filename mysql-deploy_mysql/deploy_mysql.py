@@ -151,11 +151,11 @@ def get_config_file():
                         "[Default: my.cnf]: ")
 
     if config_name == '':
-        package_name = r'my.cnf'
+        config_name = r'my.cnf'
 
     current_dir = os.getcwd()
-    config_file = '{current_dir}{sep}my_cnf{sep}{package_name}'.format(sep=sep, current_dir=current_dir,
-                                                                       package_name=package_name)
+    config_file = '{current_dir}{sep}my_cnf{sep}{config_name}'.format(sep=sep, current_dir=current_dir,
+                                                                       config_name=config_name)
 
     if os.path.exists(config_file):
         return config_file
