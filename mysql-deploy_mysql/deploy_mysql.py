@@ -148,7 +148,7 @@ def get_config_file():
 
     config_name = input("\nInput the MySQL configuration file name, "
                         "which must be put in directory 'my_cnf'\n"
-                        "[Default: my.cnf]: ")
+                        "[Default: my_mysql.cnf]: ")
 
     if config_name == '':
         config_name = r'my.cnf'
